@@ -1,0 +1,11 @@
+.env
+.env.local
+.env.production
+secrets.json
+*.secret
+*.log
+logs/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
