@@ -7,23 +7,47 @@
   <meta name="robots" content="noindex, nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&family=Barlow+Condensed:wght@400;500;600&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ============================================================
-       HEADER
-  ============================================================ -->
-  <header class="header">
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo">430</a>
+      <a class="logo" href="#">430</a>
+
       <nav class="nav" id="nav">
-        <a href="#collection" class="nav-link">Collection</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#news" class="nav-link">News</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <div class="nav-item has-dropdown">
+          <a class="nav-link" href="#">ITEMS</a>
+          <div class="dropdown">
+            <a href="#">NEW RELEASE</a>
+            <a href="#">ALL ITEMS</a>
+            <a href="#">JACKET</a>
+            <a href="#">SHIRT</a>
+            <a href="#">CUT&amp;SEWN</a>
+            <a href="#">KNIT</a>
+            <a href="#">TROUSERS</a>
+            <a href="#">HAT.CAP</a>
+            <a href="#">ACCESSORIES</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#">VISUAL</a>
+        <a class="nav-link" href="#">FEATURE</a>
+        <a class="nav-link" href="#">STOCKISTS</a>
       </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Search">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5.8" cy="5.8" r="4.8" stroke="#000" stroke-width="1.2"/>
+            <line x1="9.5" y1="9.5" x2="13" y2="13" stroke="#000" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <a class="nav-link" href="#">LOGIN</a>
+        <a class="nav-link" href="#">CART(0)</a>
+      </div>
+
       <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -32,194 +56,329 @@
     </div>
   </header>
 
-  <main>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-top">
+      <span class="logo">430</span>
+      <button class="mobile-close" id="mobileClose" aria-label="Close">✕</button>
+    </div>
+    <nav class="mobile-nav">
+      <a href="#">ITEMS</a>
+      <a href="#">VISUAL</a>
+      <a href="#">FEATURE</a>
+      <a href="#">STOCKISTS</a>
+      <a href="#">LOGIN</a>
+      <a href="#">CART(0)</a>
+    </nav>
+  </div>
 
-    <!-- ============================================================
-         HERO
-    ============================================================ -->
-    <section class="hero">
-      <div class="hero-image">
-        <img
-          src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=1400&q=80"
-          alt="430 FOURTHIRTY SS 2026">
+  <!-- ===== HERO SLIDER ===== -->
+  <section class="hero">
+    <div class="hero-slider">
+      <div class="hero-slide active">
+        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=1400&q=80" alt="430 SS2026">
       </div>
-      <div class="container">
-        <div class="hero-caption">
-          <p>430 / Fourthirty</p>
-          <p>SS 2026 Collection</p>
-        </div>
+      <div class="hero-slide">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1400&q=80" alt="430 SS2026">
       </div>
-    </section>
+    </div>
+    <div class="hero-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+    </div>
+    <div class="hero-caption">
+      <p>430 / FOURTHIRTY</p>
+      <p>2026 SPRING &amp; SUMMER COLLECTION</p>
+    </div>
+  </section>
 
-    <!-- ============================================================
-         COLLECTION
-    ============================================================ -->
-    <section class="section" id="collection">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">New Arrivals</span>
-          <a href="#" class="view-all">View All →</a>
-        </div>
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-content">430 / FOURTHIRTY &nbsp;·&nbsp; EVERYTHING IS THE FUEL TO OUR ENERGY. &nbsp;·&nbsp; EST. 1996 &nbsp;·&nbsp; BMX STREET CULTURE &nbsp;·&nbsp; TOKYO &nbsp;·&nbsp;</span>
+      <span class="marquee-content">430 / FOURTHIRTY &nbsp;·&nbsp; EVERYTHING IS THE FUEL TO OUR ENERGY. &nbsp;·&nbsp; EST. 1996 &nbsp;·&nbsp; BMX STREET CULTURE &nbsp;·&nbsp; TOKYO &nbsp;·&nbsp;</span>
+    </div>
+  </div>
 
-        <div class="product-grid">
+  <!-- ===== NEW ARRIVALS ===== -->
+  <section class="arrivals-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">NEW ARRIVALS</p>
+        <a href="#" class="link-more">VIEW ALL →</a>
+      </div>
+      <div class="product-grid fade-in">
 
-          <article class="product-card fade-in">
-            <div class="product-image">
-              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80&fit=crop&crop=center" alt="30TH ANNIVERSARY LOGO TEE">
+        <div class="product-card">
+          <a href="#">
+            <div class="product-media">
+              <img class="product-img" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80&fit=crop&crop=center" alt="30TH ANNIVERSARY LOGO TEE">
+              <img class="product-img-hover" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&q=80&fit=crop&crop=center" alt="">
             </div>
             <div class="product-info">
-              <p class="product-name">30th Anniversary Logo Tee</p>
+              <p class="product-name">30TH ANNIVERSARY LOGO TEE</p>
               <p class="product-price">¥8,800</p>
             </div>
-          </article>
+          </a>
+        </div>
 
-          <article class="product-card fade-in">
-            <div class="product-image">
-              <img src="https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=600&q=80&fit=crop&crop=center" alt="BMX GRAPHIC HOODIE">
+        <div class="product-card">
+          <a href="#">
+            <div class="product-media">
+              <img class="product-img" src="https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=600&q=80&fit=crop&crop=center" alt="BMX GRAPHIC HOODIE">
+              <img class="product-img-hover" src="https://images.unsplash.com/photo-1509942774463-acf339cf87d5?w=600&q=80&fit=crop&crop=center" alt="">
             </div>
             <div class="product-info">
-              <p class="product-name">BMX Graphic Hoodie</p>
+              <p class="product-name">BMX GRAPHIC HOODIE</p>
               <p class="product-price">¥19,800</p>
             </div>
-          </article>
+          </a>
+        </div>
 
-          <article class="product-card fade-in">
-            <div class="product-image">
-              <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&q=80&fit=crop&crop=center" alt="STRIPE COACH JACKET">
+        <div class="product-card">
+          <a href="#">
+            <div class="product-media">
+              <img class="product-img" src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&q=80&fit=crop&crop=center" alt="STRIPE COACH JACKET">
+              <img class="product-img-hover" src="https://images.unsplash.com/photo-1544441893-675973e31985?w=600&q=80&fit=crop&crop=center" alt="">
             </div>
             <div class="product-info">
-              <p class="product-name">Stripe Coach Jacket</p>
+              <p class="product-name">STRIPE COACH JACKET</p>
               <p class="product-price">¥29,800</p>
             </div>
-          </article>
+          </a>
+        </div>
 
-          <article class="product-card fade-in">
-            <div class="product-image">
-              <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600&q=80&fit=crop&crop=center" alt="LOGO CAP — NEW ERA">
+        <div class="product-card">
+          <a href="#">
+            <div class="product-media">
+              <img class="product-img" src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600&q=80&fit=crop&crop=center" alt="LOGO CAP — NEW ERA">
+              <img class="product-img-hover" src="https://images.unsplash.com/photo-1521369909029-2afed882baee?w=600&q=80&fit=crop&crop=center" alt="">
             </div>
             <div class="product-info">
-              <p class="product-name">Logo Cap — New Era</p>
+              <p class="product-name">LOGO CAP — NEW ERA</p>
               <p class="product-price">¥7,700</p>
             </div>
-          </article>
+          </a>
+        </div>
 
-          <article class="product-card fade-in">
-            <div class="product-image">
-              <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=600&q=80&fit=crop&crop=center" alt="WORK PANTS — RELAXED FIT">
+        <div class="product-card">
+          <a href="#">
+            <div class="product-media">
+              <img class="product-img" src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=600&q=80&fit=crop&crop=center" alt="WORK PANTS — RELAXED FIT">
+              <img class="product-img-hover" src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&q=80&fit=crop&crop=center" alt="">
             </div>
             <div class="product-info">
-              <p class="product-name">Work Pants — Relaxed Fit</p>
+              <p class="product-name">WORK PANTS — RELAXED FIT</p>
               <p class="product-price">¥18,700</p>
             </div>
-          </article>
+          </a>
+        </div>
 
-          <article class="product-card fade-in">
-            <div class="product-image">
-              <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&q=80&fit=crop&crop=center" alt="COLLAB TEE — SS26">
+        <div class="product-card">
+          <a href="#">
+            <div class="product-media">
+              <img class="product-img" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&q=80&fit=crop&crop=center" alt="COLLAB TEE — SS26">
+              <img class="product-img-hover" src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&q=80&fit=crop&crop=center" alt="">
             </div>
             <div class="product-info">
-              <p class="product-name">Collab Tee — SS26</p>
+              <p class="product-name">COLLAB TEE — SS26</p>
               <p class="product-price">¥9,900</p>
             </div>
-          </article>
+          </a>
+        </div>
 
-          <article class="product-card fade-in">
-            <div class="product-image">
-              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80&fit=crop&crop=center" alt="MOUNTAIN PARKA">
+        <div class="product-card">
+          <a href="#">
+            <div class="product-media">
+              <img class="product-img" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80&fit=crop&crop=center" alt="MOUNTAIN PARKA">
+              <img class="product-img-hover" src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=600&q=80&fit=crop&crop=center" alt="">
             </div>
             <div class="product-info">
-              <p class="product-name">Mountain Parka</p>
+              <p class="product-name">MOUNTAIN PARKA</p>
               <p class="product-price">¥34,100</p>
             </div>
-          </article>
+          </a>
+        </div>
 
-          <article class="product-card fade-in">
-            <div class="product-image">
-              <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=600&q=80&fit=crop&crop=center" alt="KNIT POLO SHIRT">
+        <div class="product-card">
+          <a href="#">
+            <div class="product-media">
+              <img class="product-img" src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=600&q=80&fit=crop&crop=center" alt="KNIT POLO SHIRT">
+              <img class="product-img-hover" src="https://images.unsplash.com/photo-1562157873-818bc0726f68?w=600&q=80&fit=crop&crop=center" alt="">
             </div>
             <div class="product-info">
-              <p class="product-name">Knit Polo Shirt</p>
+              <p class="product-name">KNIT POLO SHIRT</p>
               <p class="product-price">¥14,300</p>
             </div>
-          </article>
-
+          </a>
         </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ============================================================
-         ABOUT
-    ============================================================ -->
-    <section class="section about-section" id="about">
-      <div class="container">
-        <div class="about-grid">
-
-          <div class="about-text fade-in">
-            <div class="about-header">
-              <span class="section-label">About 430</span>
-            </div>
-            <p class="about-since">Since 1996</p>
-            <div class="about-body">
-              <p>1996年4月30日、5人のプロBMXライダーによって結成された430/Fourthirty。BMXを起点としたストリートカルチャーの精神を軸に、アパレルブランドとして独自の地位を確立してきた。</p>
-              <p>着心地・動きやすさ・デザイン性—ライダー視点が生んだ機能美は、BMXシーンを超えて幅広い支持を集める。</p>
-              <p>2026年、創立30周年を迎える。</p>
-            </div>
-            <p class="about-tagline">Everything is the Fuel to Our Energy.</p>
-          </div>
-
-          <div class="about-image fade-in">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=80&fit=crop&crop=center" alt="430 Fourthirty — Brand Story">
-          </div>
-
+  <!-- ===== VISUAL ===== -->
+  <section class="visual-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div>
+          <p class="section-label">VISUAL</p>
+          <p class="section-sub">2026 SPRING &amp; SUMMER</p>
         </div>
+        <a href="#" class="link-more">MORE →</a>
       </div>
-    </section>
+    </div>
+    <div class="visual-scroll-track" id="visualTrack">
+      <div class="visual-item">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800&q=80&fit=crop&crop=center" alt="">
+      </div>
+      <div class="visual-item">
+        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=800&q=80&fit=crop&crop=center" alt="">
+      </div>
+      <div class="visual-item">
+        <img src="https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=800&q=80&fit=crop&crop=center" alt="">
+      </div>
+      <div class="visual-item">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80&fit=crop&crop=center" alt="">
+      </div>
+      <div class="visual-item">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80&fit=crop&crop=center" alt="">
+      </div>
+    </div>
+  </section>
 
-    <!-- ============================================================
-         NEWS
-    ============================================================ -->
-    <section class="section" id="news">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">News</span>
-        </div>
+  <!-- ===== FEATURE ===== -->
+  <section class="feature-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">FEATURE</p>
+        <a href="#" class="link-more">VIEW ALL →</a>
+      </div>
+      <div class="feature-grid fade-in">
 
-        <ul class="news-list">
-          <li class="news-item fade-in">
-            <span class="news-date">2026.05.02</span>
-            <span class="news-title">みどりな夜 2026 — 30th Anniversary Event</span>
-            <span class="news-category">Event</span>
-          </li>
-          <li class="news-item fade-in">
-            <span class="news-date">2026.04.15</span>
-            <span class="news-title">2026 Spring / Summer Collection On Sale</span>
-            <span class="news-category">Collection</span>
-          </li>
-          <li class="news-item fade-in">
-            <span class="news-date">2026.03.20</span>
-            <span class="news-title">Interview : 30th Anniversary Special</span>
-            <span class="news-category">Interview</span>
-          </li>
+        <a href="#" class="feature-item">
+          <div class="feature-thumb">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80&fit=crop&crop=center" alt="">
+          </div>
+          <p class="feature-num">01</p>
+          <p class="feature-title">30TH ANNIVERSARY SPECIAL</p>
+        </a>
+
+        <a href="#" class="feature-item">
+          <div class="feature-thumb">
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80&fit=crop&crop=center" alt="">
+          </div>
+          <p class="feature-num">02</p>
+          <p class="feature-title">SS2026 LOOKBOOK</p>
+        </a>
+
+        <a href="#" class="feature-item">
+          <div class="feature-thumb">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80&fit=crop&crop=center" alt="">
+          </div>
+          <p class="feature-num">03</p>
+          <p class="feature-title">BMX CULTURE</p>
+        </a>
+
+        <a href="#" class="feature-item">
+          <div class="feature-thumb">
+            <img src="https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=600&q=80&fit=crop&crop=center" alt="">
+          </div>
+          <p class="feature-num">04</p>
+          <p class="feature-title">BRAND STORY — 1996-2026</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section class="news-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">NEWS</p>
+        <a href="#" class="link-more">VIEW ALL →</a>
+      </div>
+      <ul class="news-list fade-in">
+        <li class="news-item">
+          <span class="news-badge">NEW</span>
+          <span class="news-date">2026.05.02</span>
+          <span class="news-title">みどりな夜 2026 — 30TH ANNIVERSARY EVENT 開催報告</span>
+          <span class="news-cat">EVENT</span>
+        </li>
+        <li class="news-item">
+          <span class="news-badge"></span>
+          <span class="news-date">2026.04.15</span>
+          <span class="news-title">2026 SPRING/SUMMER COLLECTION — NEW DELIVERY</span>
+          <span class="news-cat">DELIVERY</span>
+        </li>
+        <li class="news-item">
+          <span class="news-badge"></span>
+          <span class="news-date">2026.03.28</span>
+          <span class="news-title">30TH ANNIVERSARY COLLABORATION ITEM 発売のお知らせ</span>
+          <span class="news-cat">COLLAB</span>
+        </li>
+        <li class="news-item">
+          <span class="news-badge"></span>
+          <span class="news-date">2026.02.10</span>
+          <span class="news-title">30TH ANNIVERSARY SPECIAL PAGE 公開のお知らせ</span>
+          <span class="news-cat">NEWS</span>
+        </li>
+        <li class="news-item">
+          <span class="news-badge"></span>
+          <span class="news-date">2026.01.20</span>
+          <span class="news-title">STOCKISTS UPDATE — 2026 SPRING SEASON</span>
+          <span class="news-cat">STOCKISTS</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-cols">
+      <div class="footer-col">
+        <p class="footer-heading">SUPPORT</p>
+        <ul>
+          <li><a href="#">SHOPPING GUIDE</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">RECRUIT</a></li>
         </ul>
       </div>
-    </section>
-
-  </main>
-
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
-  <footer class="footer" id="contact">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <p class="footer-logo">430 / Fourthirty</p>
-        <p class="footer-copy">© 2026 Fourthirty.<br>All Rights Reserved.</p>
+      <div class="footer-col">
+        <p class="footer-heading">LEGAL</p>
+        <ul>
+          <li><a href="#">TERMS</a></li>
+          <li><a href="#">PRIVACY POLICY</a></li>
+        </ul>
       </div>
-      <nav class="footer-right" aria-label="Footer navigation">
-        <a href="#" class="footer-link">Instagram</a>
-        <a href="#" class="footer-link">Online Store</a>
-        <a href="#contact" class="footer-link">Contact</a>
-      </nav>
+      <div class="footer-col">
+        <p class="footer-heading">SNS</p>
+        <ul>
+          <li><a href="#">INSTAGRAM</a></li>
+          <li><a href="#">X (TWITTER)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <p class="footer-heading">NEWSLETTER</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="EMAIL ADDRESS" aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-brand">430 / FOURTHIRTY</p>
+        <p class="footer-copy">COPYRIGHT © 430. ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <span class="marquee-content">EVERYTHING IS THE FUEL TO OUR ENERGY. &nbsp;·&nbsp; 430 / FOURTHIRTY &nbsp;·&nbsp; EST. 1996 &nbsp;·&nbsp; BMX STREET CULTURE &nbsp;·&nbsp; TOKYO &nbsp;·&nbsp;</span>
+        <span class="marquee-content">EVERYTHING IS THE FUEL TO OUR ENERGY. &nbsp;·&nbsp; 430 / FOURTHIRTY &nbsp;·&nbsp; EST. 1996 &nbsp;·&nbsp; BMX STREET CULTURE &nbsp;·&nbsp; TOKYO &nbsp;·&nbsp;</span>
+      </div>
     </div>
   </footer>
 
